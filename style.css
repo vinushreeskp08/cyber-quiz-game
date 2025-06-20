@@ -1,0 +1,168 @@
+body {
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 40px;
+  text-align: center;
+}
+
+.quiz-container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #111;
+  border: 3px solid #00ffcc;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 25px #00ffcc;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { box-shadow: 0 0 5px #00ffcc; }
+  100% { box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffff; }
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00f2ff;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #77ffe6;
+}
+
+/* USER LOGIN */
+#user-login {
+  margin-bottom: 20px;
+}
+
+#username {
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px;
+  border: 1px solid #00ffcc;
+  background-color: #000;
+  color: #00ffcc;
+}
+
+#user-login button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #00ffcc;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#user-login button:hover {
+  background-color: #00e6b8;
+}
+
+#question {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+#options button {
+  display: block;
+  margin: 12px auto;
+  padding: 12px 25px;
+  width: 60%;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1em;
+}
+
+#options button:hover {
+  background-color: #00e6b8;
+}
+
+#next-btn {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#next-btn:hover {
+  background-color: #005ed9;
+}
+
+#music-btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #222;
+  color: #0f0;
+  border: 1px solid #0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#music-btn:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+#feedback {
+  font-size: 1.2em;
+  margin: 15px;
+  min-height: 30px;
+}
+
+#score {
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+#high-score {
+  font-size: 1.2em;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+#progress-bar {
+  height: 12px;
+  width: 0%;
+  background-color: #00ffcc;
+  transition: width 0.5s;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.level-select {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #00ffcc;
+}
+
+select {
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: #000;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 6px;
+}
+
+/* Badge Display */
+#badge-display {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
