@@ -1,52 +1,38 @@
 # 🧠 Cybersecurity Awareness Game 🎮
 
-A fun and interactive browser-based quiz game that helps users learn and test their cybersecurity knowledge in a gamified way.
+A fun, interactive browser-based quiz game to learn and test cybersecurity concepts through different levels.
 
-🔗 **Live Demo**  
+🔗 **Live Demo**:  
 [https://vinushreeskp08.github.io/cyber-quiz-game](https://vinushreeskp08.github.io/cyber-quiz-game)
 
 ---
 
 ## 🚀 Features
 
-- ✅ Username entry and high score saving
-- 🧠 3 Difficulty Levels: Easy, Medium, Hard
+- 👤 Username input + high score tracking
+- 🎯 3 Levels: Easy, Medium, Hard
 - 🏅 Badge awards: Bronze / Silver / Gold
-- 🔊 Voice-based sound effects (Access Granted / Denied)
-- 🎵 Background cyber music (with mute toggle)
-- 📱 Fully responsive and mobile-friendly UI
+- 🔊 Voice sound effects: “Access Granted” / “Access Denied”
+- 🎵 Background hacker music with mute button
+- 📱 Mobile-friendly & responsive UI
 
 ---
 
 ## 🛠️ Tech Stack
 
 - HTML5  
-- CSS3 (Hacker-style themed)  
+- CSS3 (Hacker-style UI)  
 - JavaScript (Vanilla)  
-- GitHub Pages (Hosting)
+- Python for local server  
+- GitHub Pages for live hosting
 
----
 
-## 📂 How to Run Locally
+## 🧪 Run Locally (with server)
 
+### 1. Clone the repository:
+bash
 git clone https://github.com/vinushreeskp08/cyber-quiz-game.git
 cd cyber-quiz-game
-python3 -m http.server 9000
-Then open in your browser:
-http://localhost:9000
-🧩 Future Improvements
-
-    🎯 Add 20+ questions and category filters
-
-    🧠 Randomized quizzes per session
-
-    ☁️ Firebase or local leaderboard
-
-    🌐 Multi-language quiz mode
-
-🙋‍♀️ Author
-
-Vinushree S.K.P
-🎓 MSc Cybersecurity Student & Intern
-🔐 Passionate about awareness, simulation, and ethical hacking tools
-📫 LinkedIn (https://www.linkedin.com/in/vinushree-birwa-233179287)
+To run the server -> 
+python3 server.py
+http://localhost:7777
