@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cyber Hacker Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>💻 CYBER HACKER QUIZ 🧠</h1>
+    <p class="tagline">Think you're hacker smart? Prove it. 👨💻</p>
+
+    <div id="user-login">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="startGame()">Start Quiz 🚀</button>
+    </div>
+
+    <div id="quiz-content" style="display:none;">
+      <div class="level-select">
+        <label for="level">Select Level:</label>
+        <select id="level" onchange="setLevel(this.value)">
+          <option value="easy">🟢 Easy</option>
+          <option value="medium">🟡 Medium</option>
+          <option value="hard">🔴 Hard</option>
+        </select>
+      </div>
+
+      <div id="progress-bar"></div>
+      <p id="timer">⏳ Time Left: <span id="time">15</span>s</p>
+      <div id="question"></div>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <button id="next-btn" onclick="nextQuestion()">🡆 Next</button>
+      <p id="score"></p>
+      <div id="badge-display"></div>
+      <p id="high-score"></p>
+
+      <button onclick="toggleMusic()" id="music-btn">🎵 Mute Music</button>
+    </div>
+
+    <!-- Sound effects -->
+    <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+    <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+    <audio id="bgMusic" src="https://cdn.pixabay.com/audio/2022/11/01/audio_5590283963.mp3" loop autoplay preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
